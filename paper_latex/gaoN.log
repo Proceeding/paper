@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.10.28)  2 NOV 2018 19:08
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.10.28)  3 NOV 2018 13:14
 entering extended mode
-**F:/paper/gaoN/gaoN.tex
-(F:/paper/gaoN/gaoN.tex
+**C:/Users/85111/Desktop/WCNC/æŽ’ç‰ˆ/gaoN(2)/gaoN.tex
+(C:/Users/85111/Desktop/WCNC/æŽ’ç‰ˆ/gaoN(2)/gaoN.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(F:\paper\gaoN\IEEEtran.cls
+(C:\Users\85111\Desktop\WCNC\æŽ’ç‰ˆ\gaoN(2)\IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -118,6 +118,9 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
+(G:\CTEX\MiKTeX\tex\latex\multirow\multirow.sty
+\bigstrutjot=\dimen126
+)
 (G:\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip44
@@ -129,11 +132,11 @@ Package: amstext 2000/06/29 v2.01
 (G:\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks15
-\ex@=\dimen126
+\ex@=\dimen127
 ))
 (G:\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen127
+\pmbraise@=\dimen128
 )
 (G:\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -150,7 +153,7 @@ LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box28
 \strutbox@=\box29
-\big@size=\dimen128
+\big@size=\dimen129
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \macc@depth=\count99
@@ -163,12 +166,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \column@=\count104
 \maxfields@=\count105
 \andhelp@=\toks17
-\eqnshift@=\dimen129
-\alignsep@=\dimen130
-\tagshift@=\dimen131
-\tagwidth@=\dimen132
-\totwidth@=\dimen133
-\lineht@=\dimen134
+\eqnshift@=\dimen130
+\alignsep@=\dimen131
+\tagshift@=\dimen132
+\tagwidth@=\dimen133
+\totwidth@=\dimen134
+\lineht@=\dimen135
 \@envbody=\toks18
 \multlinegap=\skip45
 \multlinetaggap=\skip46
@@ -243,8 +246,8 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count112
 ))
-\Gin@req@height=\dimen135
-\Gin@req@width=\dimen136
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
 )
 (G:\CTEX\MiKTeX\tex\latex\base\textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
@@ -347,114 +350,121 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (G:\CTEX\MiKTeX\tex\latex\tools\enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks24
-) (F:\paper\gaoN\gaoN.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 17.
+)
+(C:\Users\85111\Desktop\WCNC\æŽ’ç‰ˆ\gaoN(2)\gaoN.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
 
 (G:\CTEX\MiKTeX\tex\latex\base\ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    ... okay on input line 18.
 
 -- Lines per column: 56 (exact).
 (G:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count113
-\scratchdimen=\dimen137
+\scratchdimen=\dimen138
 \scratchbox=\box32
 \nofMPsegments=\count114
 \nofMParguments=\count115
 \everyMPshowfont=\toks25
 \MPscratchCnt=\count116
-\MPscratchDim=\dimen138
+\MPscratchDim=\dimen139
 \MPnumerator=\count117
 \makeMPintoPDFobject=\count118
 \everyMPtoPDFconversion=\toks26
 )
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 58.
-LaTeX Font Info:    Try loading font information for U+msa on input line 58.
- (G:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
+Missing character: There is no â in font ptmb7t!
+Missing character: There is no € in font ptmb7t!
+Missing character: There is no ™ in font ptmb7t!
+
+Underfull \hbox (badness 2134) in paragraph at lines 37--39
+[]\OT1/ptm/b/it/9 Index Terms\OT1/ptm/b/n/9 ---Mobility, Caching S-trat-e-gy, H
+et-ero-ge-neous
+ []
+
+[1{G:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+
+
+]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+LaTeX Font Info:    Try loading font information for U+msa on input line 55.
+
+(G:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 58.
+LaTeX Font Info:    Try loading font information for U+msb on input line 55.
 
 (G:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no   in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no   in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no   in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no   in font ptmr7t!
-Missing character: There is no Â in font ptmr7t!
-Missing character: There is no   in font ptmr7t!
- [1{G:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
-
-
-]
-Underfull \hbox (badness 1412) in paragraph at lines 88--89
-[]\OT1/ptm/m/n/10 A Re-source Shar-ing and Ad-mis-sion Con-trol(RSAC)
- []
-
 Missing character: There is no â in font ptmri7t!
 Missing character: There is no € in font ptmri7t!
 Missing character: There is no ™ in font ptmri7t!
+
 <fig1.png, id=9, 233.87375pt x 170.6375pt>
 File: fig1.png Graphic file (type png)
  <use fig1.png>
-Package pdftex.def Info: fig1.png used on input line 97.
+Package pdftex.def Info: fig1.png used on input line 68.
 (pdftex.def)             Requested size: 163.71048pt x 119.44542pt.
- [2 <F:/paper/gaoN/fig1.png>] <fig2.png, id=23, 276.53313pt x 226.8475pt>
+ [2 <C:/Users/85111/Desktop/WCNC/æŽ’ç‰ˆ/gaoN(2)/fig1.png>]
+<fig2.png, id=22, 276.53313pt x 226.8475pt>
 File: fig2.png Graphic file (type png)
  <use fig2.png>
-Package pdftex.def Info: fig2.png used on input line 156.
+Package pdftex.def Info: fig2.png used on input line 129.
 (pdftex.def)             Requested size: 138.26622pt x 113.42346pt.
- [3 <F:/paper/gaoN/fig2.png>] <fig3.png, id=28, 387.4475pt x 219.82124pt>
-File: fig3.png Graphic file (type png)
- <use fig3.png>
-Package pdftex.def Info: fig3.png used on input line 217.
-(pdftex.def)             Requested size: 193.72327pt x 109.91034pt.
+ [3 <C:/Users/85111/Desktop/WCNC/æŽ’ç‰ˆ/gaoN(2)/fig2.png>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 217.
 
-[4 <F:/paper/gaoN/fig3.png>]
+
+(G:\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 217.
+Missing character: There is no Î in font ptmr7t!
+Missing character: There is no ³ in font ptmr7t!
+ [4]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
- <fig4.png, id=34, 577.65813pt x 433.11812pt>
-File: fig4.png Graphic file (type png)
 
-<use fig4.png>
-Package pdftex.def Info: fig4.png used on input line 268.
+<fig3.png, id=31, 577.65813pt x 433.11812pt>
+File: fig3.png Graphic file (type png)
+ <use fig3.png>
+Package pdftex.def Info: fig3.png used on input line 263.
 (pdftex.def)             Requested size: 202.18336pt x 151.59361pt.
- <fig5.png, id=35, 701.62125pt x 505.13719pt>
-File: fig5.png Graphic file (type png)
- <use fig5.png>
-Package pdftex.def Info: fig5.png used on input line 275.
+
+<fig4.png, id=33, 701.62125pt x 505.13719pt>
+File: fig4.png Graphic file (type png)
+ <use fig4.png>
+Package pdftex.def Info: fig4.png used on input line 270.
 (pdftex.def)             Requested size: 210.48799pt x 151.54233pt.
 
-<fig6.png, id=36, 701.62125pt x 491.58656pt>
-File: fig6.png Graphic file (type png)
- <use fig6.png>
-Package pdftex.def Info: fig6.png used on input line 282.
+<fig5.png, id=34, 701.62125pt x 491.58656pt>
+File: fig5.png Graphic file (type png)
+ <use fig5.png>
+Package pdftex.def Info: fig5.png used on input line 277.
 (pdftex.def)             Requested size: 210.48799pt x 147.4771pt.
- [5 <F:/paper/gaoN/fig4.png (PNG copy)> <F:/paper/gaoN/fig5.png (PNG copy)> <F:
-/paper/gaoN/fig6.png (PNG copy)>] (F:\paper\gaoN\gaoN.bbl)
+
+(C:\Users\85111\Desktop\WCNC\æŽ’ç‰ˆ\gaoN(2)\gaoN.bbl [5 <C:/Users/85111/Desktop
+/WCNC/æŽ’ç‰ˆ/gaoN(2)/fig3.png> <C:/Users/85111/Desktop/WCNC/æŽ’ç‰ˆ/gaoN(2)/fig4
+.png>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -466,33 +476,33 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6] (F:\paper\gaoN\gaoN.aux) ) 
+[6 <C:/Users/85111/Desktop/WCNC/æŽ’ç‰ˆ/gaoN(2)/fig5.png>]
+(C:\Users\85111\Desktop\WCNC\æŽ’ç‰ˆ\gaoN(2)\gaoN.aux) ) 
 Here is how much of TeX's memory you used:
- 4261 strings out of 495354
- 58642 string characters out of 3183858
- 121953 words of memory out of 3000000
- 7367 multiletter control sequences out of 15000+200000
- 50912 words of font info for 113 fonts, out of 3000000 for 9000
+ 4253 strings out of 495354
+ 58965 string characters out of 3183858
+ 130167 words of memory out of 3000000
+ 7359 multiletter control sequences out of 15000+200000
+ 43321 words of font info for 91 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 30i,11n,35p,1382b,536s stack positions out of 5000i,500n,10000p,200000b,50000s
-{G:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<
-G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><G:/CTEX/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmbx7.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmex10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><G:
-/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><G:/CTEX/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmmi5.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmmi6.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><G:/CTEX/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><G:/CTEX/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb
-><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><G:/CTEX/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmsy7.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><G
-:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><G:/CTEX/MiKTeX/fonts/type1/urw/
-times/utmbi8a.pfb><G:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><G:/CTEX/MiK
-TeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gaoN.pdf (6 pages, 564303 bytes).
+ 27i,10n,35p,1441b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
+{G:/CTEX/MiKTeX/fonts/en
+c/dvips/fontname/8r.enc}<G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.p
+fb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><G:/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><G:/
+CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><G:/CTEX/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><G:/CTEX/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr7.pfb><G:/CTEX/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+<G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><G:/CTEX/MiKTeX/
+fonts/type1/urw/times/utmb8a.pfb><G:/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.
+pfb><G:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><G:/CTEX/MiKTeX/fonts/type
+1/urw/times/utmri8a.pfb>
+Output written on gaoN.pdf (6 pages, 421463 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
