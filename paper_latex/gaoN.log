@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.10.28)  3 NOV 2018 13:14
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.10.28)  4 NOV 2018 11:10
 entering extended mode
-**C:/Users/85111/Desktop/WCNC/排版/gaoN(2)/gaoN.tex
-(C:/Users/85111/Desktop/WCNC/排版/gaoN(2)/gaoN.tex
+**F:/paper/paper_latex/gaoN.tex
+(F:/paper/paper_latex/gaoN.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
-(C:\Users\85111\Desktop\WCNC\排版\gaoN(2)\IEEEtran.cls
+(F:\paper\paper_latex\IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -350,8 +350,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (G:\CTEX\MiKTeX\tex\latex\tools\enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks24
-)
-(C:\Users\85111\Desktop\WCNC\排版\gaoN(2)\gaoN.aux)
+) (F:\paper\paper_latex\gaoN.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
@@ -422,49 +421,46 @@ File: fig1.png Graphic file (type png)
  <use fig1.png>
 Package pdftex.def Info: fig1.png used on input line 68.
 (pdftex.def)             Requested size: 163.71048pt x 119.44542pt.
- [2 <C:/Users/85111/Desktop/WCNC/排版/gaoN(2)/fig1.png>]
-<fig2.png, id=22, 276.53313pt x 226.8475pt>
+ [2 <F:/paper/paper_latex/fig1.png>] <fig2.png, id=22, 276.53313pt x 226.8475pt
+>
 File: fig2.png Graphic file (type png)
  <use fig2.png>
 Package pdftex.def Info: fig2.png used on input line 129.
 (pdftex.def)             Requested size: 138.26622pt x 113.42346pt.
- [3 <C:/Users/85111/Desktop/WCNC/排版/gaoN(2)/fig2.png>]
+
+[3 <F:/paper/paper_latex/fig2.png>]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 217.
 
-
-(G:\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd
+ (G:\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 217.
 Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
- [4]
+[4]
 Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
 Missing character: There is no � in font ptmr7t!
-
-<fig3.png, id=31, 577.65813pt x 433.11812pt>
+ <fig3.png, id=30, 577.65813pt x 433.11812pt>
 File: fig3.png Graphic file (type png)
  <use fig3.png>
 Package pdftex.def Info: fig3.png used on input line 263.
 (pdftex.def)             Requested size: 202.18336pt x 151.59361pt.
 
-<fig4.png, id=33, 701.62125pt x 505.13719pt>
+<fig4.png, id=32, 701.62125pt x 505.13719pt>
 File: fig4.png Graphic file (type png)
  <use fig4.png>
 Package pdftex.def Info: fig4.png used on input line 270.
 (pdftex.def)             Requested size: 210.48799pt x 151.54233pt.
 
-<fig5.png, id=34, 701.62125pt x 491.58656pt>
+<fig5.png, id=33, 701.62125pt x 491.58656pt>
 File: fig5.png Graphic file (type png)
  <use fig5.png>
 Package pdftex.def Info: fig5.png used on input line 277.
 (pdftex.def)             Requested size: 210.48799pt x 147.4771pt.
-
-(C:\Users\85111\Desktop\WCNC\排版\gaoN(2)\gaoN.bbl [5 <C:/Users/85111/Desktop
-/WCNC/排版/gaoN(2)/fig3.png> <C:/Users/85111/Desktop/WCNC/排版/gaoN(2)/fig4
-.png>])
+ [5 <F:/paper/paper_latex/fig3.png> <F:/paper/paper_latex/fig4.png>] (F:\paper\
+paper_latex\gaoN.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -476,31 +472,30 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6 <C:/Users/85111/Desktop/WCNC/排版/gaoN(2)/fig5.png>]
-(C:\Users\85111\Desktop\WCNC\排版\gaoN(2)\gaoN.aux) ) 
+[6 <F:/paper/paper_latex/fig5.png>] (F:\paper\paper_latex\gaoN.aux) ) 
 Here is how much of TeX's memory you used:
- 4253 strings out of 495354
- 58965 string characters out of 3183858
- 130167 words of memory out of 3000000
- 7359 multiletter control sequences out of 15000+200000
+ 4254 strings out of 495354
+ 58732 string characters out of 3183858
+ 129171 words of memory out of 3000000
+ 7360 multiletter control sequences out of 15000+200000
  43321 words of font info for 91 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,10n,35p,1441b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
-{G:/CTEX/MiKTeX/fonts/en
-c/dvips/fontname/8r.enc}<G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.p
-fb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><G:/CTEX/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><G:/
-CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><G:/CTEX/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><G:/CTEX/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr7.pfb><G:/CTEX/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-<G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><G:/CTEX/MiKTeX/
-fonts/type1/urw/times/utmb8a.pfb><G:/CTEX/MiKTeX/fonts/type1/urw/times/utmbi8a.
-pfb><G:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><G:/CTEX/MiKTeX/fonts/type
-1/urw/times/utmri8a.pfb>
-Output written on gaoN.pdf (6 pages, 421463 bytes).
+ 27i,10n,35p,1419b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
+{G:/CTEX/M
+iKTeX/fonts/enc/dvips/fontname/8r.enc}<G:/CTEX/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><G:/C
+TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><G:/CTEX/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi5.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><G:/CTEX/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><G:/CTEX/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb
+><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><G:/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><G
+:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><G:/CTEX/MiKTeX/fonts/type1/urw/
+times/utmbi8a.pfb><G:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><G:/CTEX/MiK
+TeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on gaoN.pdf (6 pages, 421773 bytes).
 PDF statistics:
  99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

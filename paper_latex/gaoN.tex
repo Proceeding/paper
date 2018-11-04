@@ -19,7 +19,7 @@
 
 \title{A GA-based Mobility-aware Proactive Caching Strategy in Heterogeneous Ultra-Dense Networks}
 
-\author{\IEEEauthorblockN{Ning Gao, Xiaodong Xu, Lei Gao}
+\author{\IEEEauthorblockN{Ning Gao, Xiaodong Xu, Lei Gao, Yanzhao Hou}
 \IEEEauthorblockA{\textit{National Engineering Lab for Mobile Network Technologies} \\
 \textit{Beijing University of Posts and Telecommunications,Beijing,100876,China}\\
 Beijing, China \\
@@ -61,7 +61,7 @@ The remainder of this paper is organized as follows. Section II describes the sy
 
 \section{System Model}
 \subsection{Network Model}
-In this paper, we consider a heterogeneous network comprising a single MBS and K densely deployed SBS denoted as $\mathbf{S} \triangleq\{0\mathrm{,\,}1\mathrm{,\,}2\mathrm{,\,}...\mathrm{,\,}K\}$, where $S_0$ represents the MBS. The MBS and SBSs are connected by a fronthaul link with the limited capacity of $ r_{FH}$ and the MBS is connected to the core network by a backhaul link with the limited capacity of $ r_{BH}$. The set of active users is $\mathbf{U} \triangleq\{1\mathrm{,\,}2\mathrm{,\,}3\mathrm{,\,}...\mathrm{,\,}U\}$ and each user only requests one file at a time while moving from one cell to another from time to time. We consider that each user u only connects to and receives data from the nearst BS (in terms of signal strength), which we later refer to as the user \emph{u’s} home BS. And the users set associate with SBS $S_k$ is denoted as $U_k$.
+In this paper, we consider a heterogeneous network comprising a single MBS and K densely deployed SBS denoted as $\mathbf{S} \triangleq\{0\mathrm{,\,}1\mathrm{,\,}2\mathrm{,\,}...\mathrm{,\,}K\}$, where $S_0$ represents the MBS. The MBS and SBSs are connected by a fronthaul link with the limited capacity of $ r_{FH}$ and the MBS is connected to the core network by a backhaul link with the limited capacity of $ r_{BH}$. The set of active users is denoted as $\mathbf{U} \triangleq\{1\mathrm{,\,}2\mathrm{,\,}3\mathrm{,\,}...\mathrm{,\,}U\}$ and each user only requests one file at a time while moving from one cell to another from time to time. We consider that each user $u$ only connects to and receives data from the nearst BS (in terms of signal strength), which we later refer to as the user \emph{u’s} home BS. And the users set associate with SBS $S_k$ is denoted as $U_k$.
 
 %fig 1
 \begin{figure}[htbp]
@@ -85,11 +85,11 @@ $$
 where $x_{i,j}$ denotes caching the file $f_j$ in BS $i$. Note that the indexing $i$ of $x_{i,j}\mathrm{,\,} i=0,1,...,K$, includes all the MBS and SBSs. The cache storage capacity constraints can be expressed as:
 
 \begin{equation}
-\sum_{j=0}^F B\cdot x_{i,j}\quad<C_i, \forall{i}\in\mathbf{S}
+\sum_{j=0}^F B\cdot x_{i,j}<C_i,\forall{i}\in\mathbf{S}
 \end{equation}
 
 \subsection{File Popularity Model}
-We define the populary distribution of files in cell $i$ as $\mathbf{P} \triangleq\{p_{i,1}\mathrm{,\,}p_{i,2}\mathrm{,\,}p_{i,3}...\mathrm{,\,}p_{i,F}\}$, in which $p_{i,j}$ is the probability of the file $f_j$ being requested from a user in BS $i$, and $ \sum_{j=1}^N p_{i,j}=1,\,\forall{i}\in\mathbf{S}$.It should be noted that the content populary here is inferred with historical data and may not reflect the file request probability in the next time period due to user mobility.
+We define the populary distribution of files in cell $i$ as $\mathbf{P} \triangleq\{p_{i,1}\mathrm{,\,}p_{i,2}\mathrm{,\,}p_{i,3}...\mathrm{,\,}p_{i,F}\}$, in which $p_{i,j}$ is the probability of the file $f_j$ being requested from a user in BS $i$, and $ \sum_{j=1}^N p_{i,j}=1,\,\forall{i}\in\mathbf{S}$.It should be noted that the content popularity here is inferred with historical data and may not reflect the file request probability in the next time period due to user mobility.
 
 \subsection{Mobility Model}
 User mobility is modeled by discrete random jumps, with the corresponding intensity characterized by average sojourn time. In terms of the distribution of sojourn time, it is reasonable to model it by an exponential function\cite{8013789}. Therefore, the probability density function (PDF) of sojourn time in BS $i$ can be written as follows:
@@ -98,7 +98,7 @@ p(\tau,\mu)=\frac{1}{\mu}e^{-\tau/\mu}
 \end{equation}
 where $\mu$ is the average sojourn time. A small $\mu_i$ indicates intense mobility and vice versa.
 
-In addition, in order to predict the trajectory of moving users, we adopt the stationary Markov chain model. Let $T_{l,i}\ge 0$ denote the probability of transition from cell $l$ to cell $i$, where $\sum_{i\in\mathbf{S}}T_{l,i}=1, forall$.While predicting the cell transition probability is a challenging task in terms of accuracy, the recent advances in machine learning techniques have made great progress on achieving this goal.
+In addition, in order to predict the trajectory of moving users, we adopt the stationary Markov chain model and use $T_{l,i}\ge 0$ denote the probability of transition from SBS $l$ to SBS $i$. While predicting the cell transition probability is a challenging task in terms of accuracy, the recent advances in machine learning techniques have made great progress on achieving this goal.
 
 \subsection{Effective Capacity based QoS parameter}
 Although introducing caching technology into RAN shortens the access distance between users and contents significantly, which can improve the service quality and efficiency of the network, it is not easy to find a proper measure to evaluate this advantage. Conventional channel models are formed from the perspective of physical layer, so it is difficult to evaluate the QoS supporting ability of the channel, such as bounds on delay and packet loss ratio. In \cite{1210731}, the authors construct the channel model from the link layer and analyze the behavior of the connection under complex QoS requirements with the queuing theory. The maximum arrival rate the wireless channel can supported is defined as a log-moment generation function as follow
@@ -133,17 +133,17 @@ In the scenario of this paper, the transmission delay can be different accroding
 
 Home SBS cache hits do not need transmission delay. The transmission delay of MBS transfering file to home SBS is $d_0=\frac{B}{r_{FH}}$.
 
- Sharing files between SBS $l$ and home SBS i will cause different transmission delay depending on the hops number $h_l,i$, which can be denoted by $d_{l,i}=h\frac{B}{r_{FH}}$.
+ Sharing files between SBS $l$ and home SBS i will cause different transmission delay depending on the hops number $h_{l,i}$, which can be denoted by $d_{l,i}=h_{l,i}\frac{B}{r_{FH}}$.
 
-Retrieving files from the EPC network through the backhaul link generally results in a large transmission delay $d_C=h_C\frac{B}{r_{BH}}$, where $h_C$ is a large constant value.
+Retrieving files from the EPC network through the backhaul link generally results in a large transmission delay $d_c=h_c\frac{B}{r_{BH}}$, where $h_c$ is a large constant value.
 
 The place where user can get the requested file affects the effective capacity of the wireless link, as the value of the QoS guarantee factor changes according to $x_{i,j}$. Thus given a cache placement matrix $\mathbf{X}$, we can get the average transmission delay of user \emph{u} in cell \emph{i} requesting file \emph{j} as,
 \begin{equation}
-D_{u,i,j}=(1-x_{i,j})(x_{o,j}d_0+\frac{1-x_{o,j}}{K-2}\sum_{l\in S\setminus{\{o,i\}}}x_{l,j}d_{l,i})+c_{i,j}d_c
+d_{u,i,j}=(1-x_{i,j})(x_{o,j}d_0+\frac{1-x_{o,j}}{K-2}\sum_{l\in S\setminus{\{o,i\}}}x_{l,j}d_{l,i})+c_{i,j}d_c
 \end{equation}
-where $c_{i,j}= \prod_{l\in S}1-x_{i,j}$, which means file $j$ is not storaged in RAN.
+where $c_{i,j}= \prod_{l\in S}1-x_{i,j}$, which means the file $j$ is not storaged in RAN.
 
-Substituting $D_{u,i,j}$to equation (6), the QoS guarantee parameter can be expressed as,
+Substituting $d_{u,i,j}$to equation (6), the QoS guarantee parameter can be expressed as,
 \begin{equation}
 \theta_{u,i,j}=-\lim_{D_{max}\to \infty}\frac{\log(Pr\{D(\infty)>D_{max}\})}{D_{max}-\sum_i d_i}
 \end{equation}
@@ -151,10 +151,10 @@ Substituting $D_{u,i,j}$to equation (6), the QoS guarantee parameter can be expr
 \section{GA-based Mobility-aware Proactive Caching Strategy}
 Here, we first explore the impact of user mobility on file popularity of different base stations. Then, we cast the cache placement optimization problem, which is aimed at maximizing the system effective capacity.
 \subsection{Mobility-aware content request probability}
-When a user with an incomplete download session of content $j$ arrives at cell $k$, part of the file, $B_{k,j}$, has been downloaded already. Hence the user only needs to download the rest of the content $j$. For simplicity, we assume the maximum bandwidth of G [MB/s] of each SBS is shared equally among the associated users of that SBS. Thus, the bandwidth allocated to each user connecting to BS $l$is given by $r_l=\frac{G}{U_l}$.
+When a user with an incomplete download session of content $j$ arrives at SBS $k$, part of the file, $B_{k,j}$, has been downloaded already. Hence the user only needs to download the rest of the content $j$. For simplicity, we assume the maximum bandwidth of $G$[MB/s] of each SBS is shared equally among the associated users of that SBS\cite{8108779}. Thus, the bandwidth allocated to each user connecting to SBS $l$ is given by $r_l=\frac{G}{U_l}$.
 
-Since each content file has B MB, the time needed to completely download one content at cell l is $t_l=B/r_l$.
-However, the sojourn time that user stays in cell $l$ is subject to exponential distribution, so the probability of the user completing the download when leaving the cell l can be inferred using the Cumulative Distribution Function $F(\tau,\mu_l)$ as,
+Since each content file has $B$ MB, the time needed to completely download one content at SBS $l$ is $t_l=B/r_l$.
+However, the sojourn time that user stays in SBS $l$ is subject to exponential distribution, so the probability of the user completing the download when leaving the cell l can be inferred using the Cumulative Distribution Function $F(\tau,\mu_l)$ as,
 \begin{equation}
   \begin{aligned}
  q_{l,j}=& Pr(\tau<t_l-\frac{B_{l,j}}{r_l})\\
@@ -163,20 +163,20 @@ However, the sojourn time that user stays in cell $l$ is subject to exponential 
   \end{aligned}
 \end{equation}
 
-Then,the file requested probability $\tilde{p_(i,j)}$ for content $j$ at cell $i$ is,
+Then, the file requested probability ${\tilde{p}_{i,j}}$ with user mobility of content $j$ at SBS $i$ is,
 \begin{equation}
-\tilde{p_{i,j}}=
+{\tilde{p}_{i,j}}=
 \begin{cases}
 p_{i,j}+\lambda\sum_{l\neq i}p_{l,j}q_{l,j},  & i=0\\
 p_{i,j}+(1-\lambda)\sum_{l\neq i}p_{l,j}q_{l,j}T_{l,j}, & i\in S\setminus 0
 \end{cases}
 \end{equation}
-Where $p_{i,j}$ is the prior popularity of file $j$ at cell $i$ and $T_(l,i)$ is the transition probability from cell $l$ to $i$. And $\lambda\in(0,1)$ is cosntant determined empirically, controlling the tendency of the file cache hierarchy. A larger $\lambda$ factor will make files with higher mobile strength tend to be cached in the MBS cache, voiding cache misses caused by frequent handovers among SBS. Conversely, a smaller $\lambda$ factor will make the file tend to be cached in the SBS cache closer to the user, minimizing the transmission delay.
+where $p_{i,j}$ is the prior popularity of file $j$ at cell $i$ and $T_{l,i}$ is the transition probability from cell $l$ to $i$. And $\lambda\in(0,1)$ is cosntant determined empirically, controlling the tendency of the file cache hierarchy. A larger $\lambda$ factor will make files with higher mobile strength tend to be cached in the MBS cache, voiding cache misses caused by frequent handovers among SBS. Conversely, a smaller $\lambda$ factor will make the file tend to be cached in the SBS cache closer to the user, minimizing the transmission delay.
 
 \subsection{Problem Formulation}
 Based on the system model and effective capacity theory previously mentioned, the effective capacity achieved by user $u$ in cell $i$ can be expressed by the following formulation:
 \begin{equation}
-\alpha_{u,i}(\theta)=\sum_j\tilde{p_{i,j}}(-\frac{1}{\theta_{u,i,j}T}\log Ee^{-\theta_{u,i,j}Tr_i})
+\alpha_{u,i}(\theta)=\sum_j{\tilde{p}_{i,j}}(-\frac{1}{\theta_{u,i,j}T}\log Ee^{-\theta_{u,i,j}Tr_i})
 \end{equation}
 The problem can be formulated as follows with the purpose of maximizing the sum effective capacity of the whole system.
 \begin{equation}
@@ -191,7 +191,7 @@ Obviously, the optimal problem is a 0-1 integer nonlinear programming problem, a
 \subsection{The GA-based approach}
 The Genetic algorithm is an adaptive heuristic search algorithm premised on the evolutionary ideas of natural selection, and it is inherently suitable for solving optimization problems with binary variables \cite{Srinivas2002Genetic}.
 
-Firstly, $N_p$ candidate caching placement matrices are generated, known as the initial population, and each matrix is called an individual. Then the objective value of each individual is calculated through equation (11). $N_e$ individuals with top objective values are chosen as elites and selected into the next generation directly. The rest of the next generation population are generated through crossover and mutation operations. The crossover function selects two individuals parent individuals to generate two crossover children, and the mutation function just operates on a single individual and generates a mutation child. The numbers of individuals generated through crossover and mutation operations are denoted as $N_c$ and $N_m$ , respectively, where $N_e+N_c+N_m=N_p$ and the crossover fraction is $f_c=N_c\setminus (N_c+N_m)$. Roulette wheel selection is adopted, and individuals with higher objective values in current generations will have a higher probability to generate offsprings. Repeat the evaluation-selection-generation procedures until Ng generation is created. Finally, the best individual in the current population is chosen as the output of the algorithm. The initial population, crossover function and mutation function of the proposed GA approach are described as follows.
+Firstly, $N_p$ candidate caching placement matrices are generated, known as the initial population, and each matrix is called an individual. Then the objective value of each individual is calculated through equation (11). $N_e$ individuals with top objective values are chosen as elites and selected into the next generation directly. The rest of the next generation population are generated through crossover and mutation operations. The crossover function selects two individuals parent individuals to generate two crossover children, and the mutation function just operates on a single individual and generates a mutation child. The numbers of individuals generated through crossover and mutation operations are denoted as $N_c$ and $N_m$ , respectively, where $N_e+N_c+N_m=N_p$ and the crossover fraction is $f_c=N_c/ (N_c+N_m)$. Roulette wheel selection is adopted, and individuals with higher objective values in current generations will have a higher probability to generate offsprings. Repeat the evaluation-selection-generation procedures until Ng generation is created. Finally, the best individual in the current population is chosen as the output of the algorithm. The initial population, crossover function and mutation function of the proposed GA approach are described as follows.
 
 1)	Initial Population: The initial population is created as a set of $\mathbf{X}^{(K+1)F}$. For each row in each individual, $M_i$ of the $F$ elements are set to be one randomly, and all the left elements are set to zero, where
 
@@ -281,6 +281,11 @@ Fig.\ref{fig 5} display the impact of file populatity distribution parameter $\g
 \section{Conclusion}
 
 In this paper, we proposed a new mobility-aware proactive caching strategy for heterogeneous ultra-dense network and use the effective capacity to evaluate the effect of transmission delay on date rate. We use random jump model and stationary Markov model to describe the mobile pattern of users and predict the popularity at BSs with it. Then, we formulated the optimal content placements problem as a 0-1 integer nonlinear programming problem and solved it by genetic algorithm based approach. Finally, simulation results show that the proposed mobility-aware proactive caching strategy achieves higher throughput and cache hit ratio than MPC strategy while users are moving.
+
+\section*{Acknowledgment}
+
+This paper is supported by Beijing Municipal S\&T project Z181100003218003, Nature and Science Foundation of China No. 61871045 and 111 Project of China B16006.
+
 \bibliographystyle{IEEEtran}
 \bibliography{reference}
 \end{document}
