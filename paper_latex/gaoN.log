@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.10.28)  4 NOV 2018 11:10
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.10.28)  4 NOV 2018 19:53
 entering extended mode
 **F:/paper/paper_latex/gaoN.tex
 (F:/paper/paper_latex/gaoN.tex
@@ -389,13 +389,7 @@ LaTeX Font Info:    ... okay on input line 18.
 Missing character: There is no â in font ptmb7t!
 Missing character: There is no € in font ptmb7t!
 Missing character: There is no ™ in font ptmb7t!
-
-Underfull \hbox (badness 2134) in paragraph at lines 37--39
-[]\OT1/ptm/b/it/9 Index Terms\OT1/ptm/b/n/9 ---Mobility, Caching S-trat-e-gy, H
-et-ero-ge-neous
- []
-
-[1{G:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
+ [1{G:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}
 
 
 ]
@@ -412,21 +406,17 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 55.
 (G:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-Missing character: There is no â in font ptmri7t!
-Missing character: There is no € in font ptmri7t!
-Missing character: There is no ™ in font ptmri7t!
-
 <fig1.png, id=9, 233.87375pt x 170.6375pt>
 File: fig1.png Graphic file (type png)
  <use fig1.png>
 Package pdftex.def Info: fig1.png used on input line 68.
-(pdftex.def)             Requested size: 163.71048pt x 119.44542pt.
+(pdftex.def)             Requested size: 233.87315pt x 170.63707pt.
  [2 <F:/paper/paper_latex/fig1.png>] <fig2.png, id=22, 276.53313pt x 226.8475pt
 >
 File: fig2.png Graphic file (type png)
  <use fig2.png>
 Package pdftex.def Info: fig2.png used on input line 129.
-(pdftex.def)             Requested size: 138.26622pt x 113.42346pt.
+(pdftex.def)             Requested size: 193.57185pt x 158.79216pt.
 
 [3 <F:/paper/paper_latex/fig2.png>]
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 217.
@@ -436,8 +426,6 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 217.
-Missing character: There is no Î in font ptmr7t!
-Missing character: There is no ³ in font ptmr7t!
 [4]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
@@ -476,11 +464,11 @@ Before submitting the final camera ready copy, remember to:
 Here is how much of TeX's memory you used:
  4254 strings out of 495354
  58732 string characters out of 3183858
- 129171 words of memory out of 3000000
+ 127171 words of memory out of 3000000
  7360 multiletter control sequences out of 15000+200000
  43321 words of font info for 91 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,10n,35p,1419b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,10n,35p,1425b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
 {G:/CTEX/M
 iKTeX/fonts/enc/dvips/fontname/8r.enc}<G:/CTEX/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><G:/C
@@ -495,7 +483,7 @@ type1/public/amsfonts/cm/cmsy10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/amsfonts
 :/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><G:/CTEX/MiKTeX/fonts/type1/urw/
 times/utmbi8a.pfb><G:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><G:/CTEX/MiK
 TeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gaoN.pdf (6 pages, 421773 bytes).
+Output written on gaoN.pdf (6 pages, 420619 bytes).
 PDF statistics:
  99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

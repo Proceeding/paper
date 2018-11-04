@@ -19,7 +19,7 @@
 
 \title{A GA-based Mobility-aware Proactive Caching Strategy in Heterogeneous Ultra-Dense Networks}
 
-\author{\IEEEauthorblockN{Ning Gao, Xiaodong Xu, Lei Gao, Yanzhao Hou}
+\author{\IEEEauthorblockN{Ning Gao, Xiaodong Xu, Yanzhao Hou, Lei Gao, }
 \IEEEauthorblockA{\textit{National Engineering Lab for Mobile Network Technologies} \\
 \textit{Beijing University of Posts and Telecommunications,Beijing,100876,China}\\
 Beijing, China \\
@@ -31,49 +31,49 @@ Email: gaoning@bupt.edu.cn}
 \maketitle
 
 \begin{abstract}
-Caching on the wireless edge is a promising solution to tackle the backhaul constraint of network densification and reduce the delay of content transmission. Although some effective caching strategies have been introduced to cellular networks, most of them ignored user mobility, which is unreasonable. In reality, users are mobile and the association with small base stations (SBSs) can change during the file downloading, which can be more frequent in heterogeneous ultra-dense networks (HetUDNs). Cache misses in another SBS will greatly increase the delay of file transmission. In this paper, we propose a mobility-aware proactive caching strategy in HetUDNs, which can proactively schedule content into different cache layer to improve users’ Quality of Service (QoS) and cache hit ratio. The cache placement problem is formulated with the aim of effective capacity maximization and solved by a genetic algorithm (GA)-based approach. Simulation results show that the proposed scheme performs better than the most popular caching (MPC) strategy.
+Caching on the wireless edge is a promising solution to tackle the backhaul constraint of network densification and reduce the delay of content transmission. Although some effective caching strategies have been introduced to cellular networks, most of them ignored user mobility, which is unreasonable. In reality, users are mobile and the associations with small-cell base stations (SBSs) can change during the file downloading, which can be more frequent in heterogeneous ultra-dense networks (H-UDNs). Files missing in a new SBS will greatly increase the delay of file transmission. In this paper, we propose a mobility-aware proactive caching strategy in H-UDNs, which can proactively schedule content into different cache layer to improve users’ quality of service (QoS) as well as cache hit ratio. The cache placement problem is formulated with the aim of effective capacity maximization and solved by a genetic algorithm (GA)-based approach. Simulation results show that the proposed caching strategy outperforms the most popular caching (MPC) strategy.
 \end{abstract}
 
 \begin{IEEEkeywords}
- Mobility, Caching Strategy, Heterogeneous ultra-dense networks (HetUDNs), Effective Capacity, Genetic Algorithm
+ Mobility, caching strategy, heterogeneous ultra-dense networks (H-UDNs), effective capacity, genetic algorithm
 \end{IEEEkeywords}
 
 \section{Introduction}
-With the development of mobile Internet, a large number of new applications are widely applied, such as AR/VR and online games. These applications require the mobile network provides the higher data transmission rate and lower network delay. Moreover, it is predicted that the mobile data traffic will reach 30.6 exabytes/month globally by 2020\cite{cisco}. To handle this challenge, heterogeneous ultra-dense networks (HetUDNs) with dense small base stations (SBS) and macro base station (MBS) has been widely introduced to enhance the network capacity. However, the costly and heavily-loaded backhaul link between HetUDNs and the core network is becoming the bottleneck\cite{6963798}.
+With the rapid development of mobile Internet, a large number of new applications are widely applied, such as AR/VR and online games. These applications require the mobile network to provide higher data transmission rate and lower network delay. Moreover, it is predicted that the mobile data traffic will reach 30.6 exabytes/month globally by year 2020\cite{cisco}. To handle these challenges, heterogeneous ultra-dense networks (H-UDNs) with dense small-cell base stations (SBS) and macro base station (MBS) have been introduced to enhance the network capacity. However, the costly and heavily-loaded backhaul link between H-UDNs and the core network is becoming the bottleneck\cite{6963798}.
 
-Caching in the HetUDNs has been widely recognized as an effective and economical solution to tackle the aforementioned challenges. By storing popular files in the densely deployed SBSs in advance \cite{8269405}, more requests can be satisfied at SBSs instead of retrieving duplicated file over the backhaul links. Besides, downloading directly from SBSs can reduces delay substantially due to the short transmission distance \cite{6736753}. However, the storage capacity on SBSs is usually limited, and thus caching strategies should be carefully designed to make the best use of the SBSs cache.
+Caching in the H-UDNs has been widely recognized as an effective and economical solution to tackle the aforementioned challenges. By storing popular files in the densely deployed SBSs in advance \cite{8269405}, more requests can be satisfied at SBSs instead of retrieving duplicated files over the backhaul links. Besides, downloading directly from SBSs can reduces delay substantially due to the short transmission distance \cite{6736753}. However, the storage capacity on SBSs is usually limited, and thus caching strategies should be carefully designed to make the best use of the SBSs cache.
 
-There have been some recent works focusing on designing caching strategies in the scenario of HetUDNs. The auther of \cite{6600983} present a wireless distributed caching strategy with a low-bandwidth backhaul link but high storage capacity where users can access multiple SBSs. Finding the optimal cache placement to maximize cache hit ratio is proved to be NP-complete. The authors of \cite{6952688} study the optimization issue for cache content placement in caching enabled HetUDNs with heterogeneous file and cache sizes and adopt multicast transmission to minimize the average backhaul rate. In the work of \cite{8116421}, the authors propose a cooperative caching strategy where SBSs can get the desired content from neighboring SBSs so as to enhance the content delivery efficiency.
+There have been some recent works focusing on designing caching strategies in the scenario of H-UDNs. The auther of \cite{6600983} present a wireless distributed caching strategy with a low-bandwidth backhaul link but high storage capacity where users can access multiple SBSs. Finding the optimal cache placement to maximize cache hit ratio is proved to be NP-complete. The authors of \cite{6952688} study the optimization issue for cache content placement in caching enabled H-UDNs with heterogeneous files and cache sizes and adopt multicast transmission to minimize the average backhaul rate. In the work of \cite{8116421}, the authors propose a cooperative caching strategy where SBSs can get the desired content from neighboring SBSs so as to enhance the content delivery efficiency.
 
-Although these recent works have provided insight into caching strategy cellular networks, users are assumed to be static and the association between users and SBSs remains unchanged. Obviously, such an assumption is unreasonable in mobile networks. Users are moving and the association to SBSs can change during the file downloading, which can be more frequently in HetUDNs \cite{7268835}. The cache placement policy that ignores user mobility cannot capture the spatial distribution changes of the file request in time, resulting in a lower degree of matching between the cache and the request. Therefore, the impact of user mobility cannot be neglect when designing file caching strategies \cite{7537180}. Reference \cite{8013789} uses a discrete random jump model to describe the mobility pattern and derive the expression of throughput. Due to the complexity of the problem, two heuristic algorithms are provided to obtain the optimal solution. The author of \cite{6620380} assumes that the user movement obeys a discrete Markov model and the amount of data downloaded by users depends on their location and the cache placement in each time slot. The user mobility is also modeled as Markov chain and a distributed caching strategy is proposed in a two-tier heterogeneous network with the aim of minimizing the content fetched from macro base station (MBS) \cite{7484297}.
+Although these recent works have provided insight into caching strategy cellular networks, users are assumed to be static and the association between users and SBSs remains unchanged. Obviously, such an assumption is unreasonable in mobile celluar networks. In fact, users are moving and the associations to SBSs can change during the file downloading, which can be more frequently in H-UDNs \cite{7268835}. The cache placement policy which ignores user mobility cannot capture the spatial distribution changes of users' requests in time and causes a lower degree of matching between files and request. Therefore, the impact of user mobility cannot be neglect when designing file caching strategies \cite{7537180}. Reference \cite{8013789} uses a discrete random jump model to describe the mobility pattern and derive the expression of throughput. Due to the complexity of the problem, two heuristic algorithms are provided to obtain the optimal solution. The author of \cite{6620380} assumes that the user movement obeys a discrete Markov model and the amount of data downloaded by users depends on their location and the cache placement in each time slot. The user mobility is also modeled as Markov chain and a distributed caching strategy is proposed in a two-tier heterogeneous network with the aim of minimizing the content fetched from macro base station (MBS) \cite{7484297}.
 
-Although these works have taken user mobility into account, they have not fully utilized the hierarchical architecture of heterogeneous networks to address the problems caused by user mobility. In a HetUDN, both MBS and SBS can be equipped with cache devices, but the delay in obtaining content from them is different. The SBS is close to the user with a small delay while the MBS is relatively far with a slightly larger delay. And the requests that the SBS miss are redirected to the MBS \cite{7484297}. Assuming that the user only accesses SBSs, the high-speed movement will cause the user to frequently switch between multiple SBSs. Due to the randomness of user movement, it is very difficult to push the required files to SBSs accurately in advance to reduce the delay, and the cache hit ratio is hard to guarantee. On the contrary, if these contents are more likely to be cached in the MBS cache, the cache hit rate of high-speed users can be effectively improved at the cost of a slightly larger delay. In addition, the SBSs cache can store more other content to satisfy more low-speed users' content requests.
+Although these works have taken user mobility into account, they have not fully utilized the hierarchical architecture of heterogeneous networks to address the problems caused by user mobility. In a cache enabled H-UDN, both MBS and SBS can storage files but the file transmission delay is different. SBSs are close to the user with a small delay while the MBS is relatively far form users with a slightly larger delay. And the requests that SBSs miss are redirected to the MBS \cite{7484297}. Assuming that the user only accesses SBSs, the high-speed movement will cause the user to frequently switch between multiple SBSs. Due to the randomness of user movement, it is very difficult to push the required files to SBSs accurately in advance to reduce the delay, and the cache hit ratio is hard to guarantee. On the contrary, if these contents are more likely to be cached in the MBS, the cache hit rate of high-speed users can be effectively improved at the cost of a slightly larger delay. In addition, the SBSs can store more other content to satisfy more low-speed users' content requests.
 
-In this paper, we are motivated to propose a mobility-aware proactive caching strategy to improve users’ QoS and cache hit ratio. Content can be scheduled in different cache layer depending on user mobility. The contributions of this paper include:
+In this paper, we are motivated to propose a mobility-aware proactive caching strategy to improve users’ QoS and cache hit ratio. Files can be scheduled between different cache layer depending on user mobility. The contributions of this paper include:
 
 \begin{itemize}
- \item We propose a mobility-aware proactive caching strategy in HetUDNs to provide the moving user with better QoS.
+ \item We propose a mobility-aware proactive caching strategy in H-UDNs to provide the mobile users with better QoS.
  \item The cache placement problem is formulated as a 0-1 integer nonlinear programming problem with the aim of effective capacity maximization, which can reflect the impact of delay in user data rate.
- \item We solve the problem by a genetic algorithm (GA)-based approach. Simulation results show that the proposed strategy can achieve better performance compared with the most popupar caching (MPC) strategy.
+ \item We solve the problem by a genetic algorithm (GA)-based approach. Simulation results show that the proposed strategy can achieve better performance compared with the most popular caching (MPC) strategy.
 \end{itemize}
 
 The remainder of this paper is organized as follows. Section II describes the system model, including network model, file popularity model, mobility model and effective capacity based QoS parameter. In Section III, we introduce the proposed mobility-aware proactive caching strategy and solve the cache placement problem with the GA-based approach. In Section IV, numerical results are illustrated with performance comparisons between MPC. Finally, conclusions are summarized in Section V.
 
 \section{System Model}
 \subsection{Network Model}
-In this paper, we consider a heterogeneous network comprising a single MBS and K densely deployed SBS denoted as $\mathbf{S} \triangleq\{0\mathrm{,\,}1\mathrm{,\,}2\mathrm{,\,}...\mathrm{,\,}K\}$, where $S_0$ represents the MBS. The MBS and SBSs are connected by a fronthaul link with the limited capacity of $ r_{FH}$ and the MBS is connected to the core network by a backhaul link with the limited capacity of $ r_{BH}$. The set of active users is denoted as $\mathbf{U} \triangleq\{1\mathrm{,\,}2\mathrm{,\,}3\mathrm{,\,}...\mathrm{,\,}U\}$ and each user only requests one file at a time while moving from one cell to another from time to time. We consider that each user $u$ only connects to and receives data from the nearst BS (in terms of signal strength), which we later refer to as the user \emph{u’s} home BS. And the users set associate with SBS $S_k$ is denoted as $U_k$.
+In this paper, we consider a heterogeneous network comprising a single MBS and $K$ densely deployed SBS denoted as $\mathbf{S} \triangleq\{0\mathrm{,\,}1\mathrm{,\,}2\mathrm{,\,}...\mathrm{,\,}K\}$, where $S_0$ represents the MBS. In this scenario, the MBS and SBSs are connected by a fronthaul link with the limited capacity of $r_{FH}$ and the MBS is connected to the core network by a backhaul link with the lcapacity of $ r_{BH}$. The set of active users is denoted as $\mathbf{U} \triangleq\{1\mathrm{,\,}2\mathrm{,\,}3\mathrm{,\,}...\mathrm{,\,}U\}$ and each user only requests one file at a time while moving from one cell to another from time to time. We consider that each user $u$ only connects to and receives data from the nearest BS (in terms of signal strength), which we later refer to as the  home-BS of user \emph{u}. And the users set associate with SBS $S_k$ is denoted as $U_k$.
 
 %fig 1
 \begin{figure}[htbp]
- \centerline{\includegraphics[scale=0.7]{fig1.png}}
+ \centerline{\includegraphics[scale=1]{fig1.png}}
  \caption{System Model.}
  \label{fig 1}
 \end{figure}
 
-We assume that the MBS has access to a library of $\mathrm{F}$ files denoted as $\mathbf{F} \triangleq\{1\mathrm{,\,}2\mathrm{,\,}3...\mathrm{,\,}N\}$, and each file has the same size denoted by $B$[MB]. Note that the assumption of equal size files is justifiable in practice since files can be divided into blocks of the same size.
+We assume that the MBS has access to a library of $\mathrm{F}$ files denoted as $\mathbf{F} \triangleq\{1\mathrm{,\,}2\mathrm{,\,}3...\mathrm{,\,}N\}$, and each file has the same size denoted by $B$ [MB]. Note that the assumption of equal size files is justifiable in practice since files can be divided into blocks of the same size.
 
-We assume that SBS $i$ are equipped whih a cache to storage files with storage capacity of $C_i[MB]$, and the MBS is equipped with a large cache with storage capacity of
-$C_0[MB]$. Each user requesting for files in $\mathbf{F}$ is initially served by the SBS he contacts. If the requested file is not present in the cache, other SBSs nearby or the MBS will send the file to the user as shown in Fig.1. To describe the cache placement decision, we define the cache placement matrix as:
+We assume that SBS $i$ are equipped whih a cache to storage files with storage capacity of $C_i$ [MB], and the MBS is equipped with a large cache with storage capacity of
+$C_0$ [MB]. Each user requesting for files in $\mathbf{F}$ is initially served by the SBS he contacts. If the requested file is not present in the cache, other SBSs nearby or the MBS will send the file to the user as shown in Fig.1. To describe the cache placement decision, we define the cache placement matrix as:
 $$\mathbf{X}=
 \begin{Bmatrix}
 x_{0,1}    &x_{0,2}  & \cdots & x_{0,N} \\
@@ -98,10 +98,10 @@ p(\tau,\mu)=\frac{1}{\mu}e^{-\tau/\mu}
 \end{equation}
 where $\mu$ is the average sojourn time. A small $\mu_i$ indicates intense mobility and vice versa.
 
-In addition, in order to predict the trajectory of moving users, we adopt the stationary Markov chain model and use $T_{l,i}\ge 0$ denote the probability of transition from SBS $l$ to SBS $i$. While predicting the cell transition probability is a challenging task in terms of accuracy, the recent advances in machine learning techniques have made great progress on achieving this goal.
+In addition, in order to predict the trajectory of moving users, we adopt the stationary Markov chain model and use $T_{l,i}\ge 0$ to denote the transition probability from SBS $l$ to SBS $i$. While predicting the cell transition probability is a challenging task in terms of accuracy, the recent advances in machine learning techniques have made great progress on achieving this goal.
 
 \subsection{Effective Capacity based QoS parameter}
-Although introducing caching technology into RAN shortens the access distance between users and contents significantly, which can improve the service quality and efficiency of the network, it is not easy to find a proper measure to evaluate this advantage. Conventional channel models are formed from the perspective of physical layer, so it is difficult to evaluate the QoS supporting ability of the channel, such as bounds on delay and packet loss ratio. In \cite{1210731}, the authors construct the channel model from the link layer and analyze the behavior of the connection under complex QoS requirements with the queuing theory. The maximum arrival rate the wireless channel can supported is defined as a log-moment generation function as follow
+Although introducing caching technology into H-UDN shortens the access distance between users and contents significantly, which can improve the service quality and efficiency of the network, it is not easy to find a proper measure to evaluate this advantage. Conventional channel models are formed from the perspective of physical layer, so it is difficult to evaluate the QoS supporting ability of the channel, such as bounds on delay and packet loss ratio. In \cite{1210731}, the authors construct the channel model from the link layer and analyze the behavior of the connection under complex QoS requirements with the queuing theory. The maximum arrival rate the wireless channel can supported is defined as a log-moment generation function as follow
 \begin{equation}
 \alpha(\theta)=-\lim_{t \to \infty}\frac{1}{\theta t}\log E{e^{-\theta S(t)}}
 \end{equation}
@@ -126,7 +126,7 @@ where $d_i$ is the transmission delay caused by the i-hop in data packet ransmis
 
 In the scenario of this paper, the transmission delay can be different accroding to the cache placement as shown in Fig.\ref{fig 2}
 \begin{figure}[htbp]
- \centerline{\includegraphics[scale=0.5]{fig2.png}}
+ \centerline{\includegraphics[scale=0.7]{fig2.png}}
  \caption{Delay Model.}
  \label{fig 2}
 \end{figure}
@@ -149,16 +149,16 @@ Substituting $d_{u,i,j}$to equation (6), the QoS guarantee parameter can be expr
 \end{equation}
 
 \section{GA-based Mobility-aware Proactive Caching Strategy}
-Here, we first explore the impact of user mobility on file popularity of different base stations. Then, we cast the cache placement optimization problem, which is aimed at maximizing the system effective capacity.
+Here, we first explore the impact of user mobility on file popularity of different base stations. Then, we formulate the cache placement optimization problem, which is aimed at maximizing the system effective capacity.
 \subsection{Mobility-aware content request probability}
-When a user with an incomplete download session of content $j$ arrives at SBS $k$, part of the file, $B_{k,j}$, has been downloaded already. Hence the user only needs to download the rest of the content $j$. For simplicity, we assume the maximum bandwidth of $G$[MB/s] of each SBS is shared equally among the associated users of that SBS\cite{8108779}. Thus, the bandwidth allocated to each user connecting to SBS $l$ is given by $r_l=\frac{G}{U_l}$.
+When a user arrives at SBS $l$ with an incomplete downloading of content $j$, part of the file $B_{l,j}$, has been downloaded already. Hence the user only needs to download the rest of the content $j$. For simplicity, we assume the maximum bandwidth of $G$ [MB/s] of each SBS is shared equally among the associated users of that SBS\cite{8108779}. Thus, the bandwidth allocated to each user connecting to SBS $l$ is given by $r_l=G/U_l$.
 
 Since each content file has $B$ MB, the time needed to completely download one content at SBS $l$ is $t_l=B/r_l$.
-However, the sojourn time that user stays in SBS $l$ is subject to exponential distribution, so the probability of the user completing the download when leaving the cell l can be inferred using the Cumulative Distribution Function $F(\tau,\mu_l)$ as,
+However, the sojourn time that user stays in SBS $l$ is subject to exponential distribution, so the probability of the user completing the download when leaving the cell $l$ can be inferred using the Cumulative Distribution Function $F(\tau,\mu_l)$ as,
 \begin{equation}
   \begin{aligned}
  q_{l,j}=& Pr(\tau<t_l-\frac{B_{l,j}}{r_l})\\
-  &=F(t_l-\frac{B_l,j}{r_l})\\
+  &=F(t_l-\frac{B_{l,j}}{r_l})\\
   &=1-exp(-(t_l-\frac{B_{l,j}}{r_l}/\mu)
   \end{aligned}
 \end{equation}
@@ -178,7 +178,7 @@ Based on the system model and effective capacity theory previously mentioned, th
 \begin{equation}
 \alpha_{u,i}(\theta)=\sum_j{\tilde{p}_{i,j}}(-\frac{1}{\theta_{u,i,j}T}\log Ee^{-\theta_{u,i,j}Tr_i})
 \end{equation}
-The problem can be formulated as follows with the purpose of maximizing the sum effective capacity of the whole system.
+The problem can be formulated as follows with the purpose of maximizing the total effective capacity of the whole system.
 \begin{equation}
  \begin{aligned}
    & {max}\ \sum_u\sum_i\alpha_{u,i}(\theta)\\
@@ -186,17 +186,17 @@ The problem can be formulated as follows with the purpose of maximizing the sum 
    & \qquad \ x_{i,j}\in\{0,1\}
  \end{aligned}
 \end{equation}
-Obviously, the optimal problem is a 0-1 integer nonlinear programming problem, and it is highly complicated to obtain a close form solution. In order to solve the problem, the genetic algorithm is adopted to solve this problem.
+Obviously, the optimal problem is a 0-1 integer nonlinear programming problem which is highly complicated to obtain a close-form solution. Therefore, a GA-based approach is introduced to solve this problem in the next section.
 
 \subsection{The GA-based approach}
 The Genetic algorithm is an adaptive heuristic search algorithm premised on the evolutionary ideas of natural selection, and it is inherently suitable for solving optimization problems with binary variables \cite{Srinivas2002Genetic}.
 
-Firstly, $N_p$ candidate caching placement matrices are generated, known as the initial population, and each matrix is called an individual. Then the objective value of each individual is calculated through equation (11). $N_e$ individuals with top objective values are chosen as elites and selected into the next generation directly. The rest of the next generation population are generated through crossover and mutation operations. The crossover function selects two individuals parent individuals to generate two crossover children, and the mutation function just operates on a single individual and generates a mutation child. The numbers of individuals generated through crossover and mutation operations are denoted as $N_c$ and $N_m$ , respectively, where $N_e+N_c+N_m=N_p$ and the crossover fraction is $f_c=N_c/ (N_c+N_m)$. Roulette wheel selection is adopted, and individuals with higher objective values in current generations will have a higher probability to generate offsprings. Repeat the evaluation-selection-generation procedures until Ng generation is created. Finally, the best individual in the current population is chosen as the output of the algorithm. The initial population, crossover function and mutation function of the proposed GA approach are described as follows.
+Firstly, $N_p$ candidate caching placement matrices are generated, known as the initial population, and each matrix is called an individual. Then the objective value of each individual is calculated through equation (11). $N_e$ individuals with top objective values are chosen as elites and pass into the next generation directly. The rest of the next generation population are generated through crossover and mutation operations. The crossover function selects two individuals parent individuals to generate two crossover children, and the mutation function just operates on a single individual and generates a mutation child. The numbers of individuals generated through crossover and mutation operations are denoted as $N_c$ and $N_m$ , respectively, where $N_e+N_c+N_m=N_p$ and the crossover fraction is $f_c=N_c/ (N_c+N_m)$. Roulette wheel selection is adopted, and individuals with higher objective values in current generations will have a higher probability to generate offsprings. Repeat the evaluation-selection-generation procedures until Ng generation is created. Finally, the best individual in the current population is chosen as the output of the algorithm. The initial population, crossover function and mutation function of the proposed GA approach are described as follows.
 
 1)	Initial Population: The initial population is created as a set of $\mathbf{X}^{(K+1)F}$. For each row in each individual, $M_i$ of the $F$ elements are set to be one randomly, and all the left elements are set to zero, where
 
 \begin{equation}
-\sum_{j=0}^K B\cdot M_i \quad<C_i, \forall{i}\in\mathbf{S}
+\sum_{i=0}^K B\cdot M_i <C_i, \forall{i}\in\mathbf{S}
 \end{equation}
 for the storage capacity constraint in each BS.
 
@@ -204,7 +204,7 @@ for the storage capacity constraint in each BS.
 
 3)	Mutation Function: The mutation function operates on a single individual and generates its mutation child. For each row of the individual, one of $F$ elements is randomly selected and the value is set to be the opposite. The mutation operation reduces the probability that the algorithm converges to local minimums.
 
-The complexity of the proposed GA is $N_p\ast N_g$, where $ N_p$ and $N_g$ are the population size and the number of generations evaluated, respectively.
+The complexity of the proposed GA-based approach is $N_p\ast N_g$, where $ N_p$ and $N_g$ are the population size and the number of generations evaluated, respectively.
 
 \begin{algorithm}[htb]
  \caption{Crossover function}
@@ -229,9 +229,9 @@ The complexity of the proposed GA is $N_p\ast N_g$, where $ N_p$ and $N_g$ are t
 \end{algorithm}
 
 \section{Performance Evaluation}
-In this section, we use computer simulation methods to evaluate the performance of the mobility-aware proactive caching strategy for HetUDNs. We simulated a HetUDN depicted in Fig1, where an MBS is located in the center and multiple SBSs are uniformly deployed in the network. Several moving users are randomly distributed in the network and we consider a wrap-around network layout such that when a user moves out of the network on one side, it comes back in on the opposite side w.r.t. the origin. We assume that the files users request can be modeled as the Zipf distribution.The request probability of file $f_j$ is
-$$p_j=\frac{1/j^\gamma}{\sum_{i=1}^N 1/j^\gamma}, \quad \forall j\in F$$
-where $\gamma$ where γ is the skewness reflecting the concentration of the popularity distribution among users. All other simulation parameters are listed in Tabel 1.
+In this section, we use computer simulation methods to evaluate the performance of the mobility-aware proactive caching strategy for H-UDNs. We simulated a H-UDN depicted in Fig1, where an MBS is located in the center and multiple SBSs are uniformly deployed in the network. Several moving users are randomly distributed in the network and we consider a wrap-around network layout such that when a user moves out of the network on one side, it comes back in on the opposite side w.r.t. the origin. We assume that the files users request can be modeled as the Zipf distribution\cite{6600983}.The request probability of file $f_j$ is
+$$p_j=\frac{1/j^\gamma}{\sum_{i=1}^F 1/j^\gamma}, \quad \forall j\in F$$
+where $\gamma$ is the skewness reflecting the concentration of the popularity distribution among users. All other simulation parameters are listed in Tabel 1.
 
 \begin{table}[htbp]
  \caption{Simulation Parameters}
@@ -245,7 +245,7 @@ where $\gamma$ where γ is the skewness reflecting the concentration of the popu
    Backhaul rate $r_{BH}$         & 1000Mbps               \\\hline
    Bandwidth of SBS $G$            &  100Mbps              \\\hline
    Number of Files $N$           & 200               \\\hline
-   Size of Files $B$            & 20MB            \\\hline
+   Size of Files $B$            & 50MB            \\\hline
    \multicolumn{2}{|c|}{GA Parameter}                \\\hline
    Population size $N_p$         & 50              \\\hline
    Terminal generation number $N_g$  & 100               \\\hline
@@ -256,7 +256,7 @@ where $\gamma$ where γ is the skewness reflecting the concentration of the popu
  \end{center}
 \end{table}
 
-We compare the performance of our optimal caching scheme with MPC (most popular caching) schemes, which uses global static content popularity and each BS stores the most popular files until its cache is full\cite{6600983}.
+We compare the performance of our optimal caching scheme with MPC (most popular caching) schemes which uses global static content popularity and each BS stores the most popular files until its cache is full\cite{6600983}.
 \subsection{Capacity Based System Tthroughput Performance}
   Fig.\ref{fig 3} shows the effective capacity based system throughput when the num of users varies in the network, where we set $\gamma=0.7$ and $\mu=4$. Obviously, we see that as the number of user increases, the system throughout improves and the mobility-aware proactive caching strategy always outperforms the MPC strategy. This is because that files cached in the SBS and MBS changes according to users’ location and preference. Hence, it can match the user request better and reduce the transmission delay.
 \begin{figure}[htbp]
@@ -265,7 +265,7 @@ We compare the performance of our optimal caching scheme with MPC (most popular 
  \label{fig 3}
 \end{figure}
 
-Fig.\ref{fig 4}investigate the relationship between cache size and system throghput. As shown in Fig.\ref{fig 5}, with the total cache size increases, the effective capacity based system throughput gains at the same time. It demonstrates the fact that expense of storage can alleviate the shortage of backhaul bandwidth and improve the data rate that a user achieves. The more contents BSs cache, the more chances users can get the contents in RAN so that they can be served immediately.
+Fig.\ref{fig 4}investigate the relationship between cache size and system throghput. As shown in Fig.\ref{fig 5}, with the total cache size increases, the effective capacity based system throughput gains at the same time. It demonstrates the fact that expense of storage can alleviate the shortage of backhaul bandwidth and improve the data rate that a user achieves. The more contents BSs cache, the more chances users can get the contents in H-UDNs so that they can be served immediately.
 \begin{figure}[htbp]
  \centerline{\includegraphics[scale=0.3]{fig4.png}}
  \caption{System throughput versus cache capacity}
@@ -280,7 +280,7 @@ Fig.\ref{fig 5} display the impact of file populatity distribution parameter $\g
 \end{figure}
 \section{Conclusion}
 
-In this paper, we proposed a new mobility-aware proactive caching strategy for heterogeneous ultra-dense network and use the effective capacity to evaluate the effect of transmission delay on date rate. We use random jump model and stationary Markov model to describe the mobile pattern of users and predict the popularity at BSs with it. Then, we formulated the optimal content placements problem as a 0-1 integer nonlinear programming problem and solved it by genetic algorithm based approach. Finally, simulation results show that the proposed mobility-aware proactive caching strategy achieves higher throughput and cache hit ratio than MPC strategy while users are moving.
+In this paper, we proposed a new mobility-aware proactive caching strategy for H-UDN and use the effective capacity to evaluate the effect of transmission delay on data transmission rate. We use random jump model and stationary Markov model to describe the mobile pattern of users and predict the popularity at BSs with it. Then, we formulated the optimal content placements problem as a 0-1 integer nonlinear programming problem and solved it by genetic algorithm based approach. Finally, simulation results show that the proposed mobility-aware proactive caching strategy achieves higher throughput and cache hit ratio than MPC strategy.
 
 \section*{Acknowledgment}
 
