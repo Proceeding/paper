@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.10.28)  5 NOV 2018 15:50
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.10.28)  7 NOV 2018 12:56
 entering extended mode
 **F:/paper/paper_latex/gaoN.tex
 (F:/paper/paper_latex/gaoN.tex
@@ -399,55 +399,52 @@ Missing character: There is no ™ in font ptmb7t!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-LaTeX Font Info:    Try loading font information for U+msa on input line 56.
+LaTeX Font Info:    Try loading font information for U+msa on input line 62.
 
 (G:\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 56.
+LaTeX Font Info:    Try loading font information for U+msb on input line 62.
 
 (G:\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 56.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 62.
 
 (G:\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<fig1.png, id=9, 450.18187pt x 321.2pt>
+<fig1.png, id=8, 440.64626pt x 307.1475pt>
 File: fig1.png Graphic file (type png)
  <use fig1.png>
-Package pdftex.def Info: fig1.png used on input line 69.
-(pdftex.def)             Requested size: 225.09038pt x 160.59961pt.
+Package pdftex.def Info: fig1.png used on input line 66.
+(pdftex.def)             Requested size: 220.32259pt x 153.57336pt.
  [2 <F:/paper/paper_latex/fig1.png>] [3]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 207.
+Underfull \hbox (badness 2384) in paragraph at lines 181--182
+[]\OT1/ptm/m/n/10 Firstly, the ini-tial pop-u-la-tion in-clud-ing $\OML/cmm/m/i
+t/10 N[]$ \OT1/ptm/m/n/10 can-di-date
+ []
 
- (G:\CTEX\MiKTeX\tex\latex\psnfss\omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 207.
- [4]
+[4]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-
-<fig3.png, id=28, 577.65813pt x 433.11812pt>
+ <fig3.png, id=28, 577.65813pt x 433.11812pt>
 File: fig3.png Graphic file (type png)
  <use fig3.png>
-Package pdftex.def Info: fig3.png used on input line 254.
+Package pdftex.def Info: fig3.png used on input line 247.
 (pdftex.def)             Requested size: 202.18336pt x 151.59361pt.
 
 <fig4.png, id=30, 701.62125pt x 505.13719pt>
 File: fig4.png Graphic file (type png)
  <use fig4.png>
-Package pdftex.def Info: fig4.png used on input line 261.
+Package pdftex.def Info: fig4.png used on input line 253.
 (pdftex.def)             Requested size: 210.48799pt x 151.54233pt.
 
 <fig5.png, id=31, 701.62125pt x 491.58656pt>
 File: fig5.png Graphic file (type png)
  <use fig5.png>
-Package pdftex.def Info: fig5.png used on input line 268.
+Package pdftex.def Info: fig5.png used on input line 260.
 (pdftex.def)             Requested size: 210.48799pt x 147.4771pt.
  [5 <F:/paper/paper_latex/fig3.png> <F:/paper/paper_latex/fig4.png> <F:/paper/p
 aper_latex/fig5.png>] (F:\paper\paper_latex\gaoN.bbl)
@@ -466,13 +463,13 @@ Before submitting the final camera ready copy, remember to:
 
 ] (F:\paper\paper_latex\gaoN.aux) ) 
 Here is how much of TeX's memory you used:
- 4264 strings out of 495354
- 59050 string characters out of 3183858
- 125185 words of memory out of 3000000
- 7366 multiletter control sequences out of 15000+200000
+ 4248 strings out of 495354
+ 58793 string characters out of 3183858
+ 126189 words of memory out of 3000000
+ 7353 multiletter control sequences out of 15000+200000
  42597 words of font info for 91 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,10n,35p,1408b,496s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,10n,35p,1408b,462s stack positions out of 5000i,500n,10000p,200000b,50000s
 {G:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.
 enc}<G:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><G:/CTEX/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmmi10.pfb><G:/CTEX/MiKTeX/fonts/type1/public/ams
@@ -485,7 +482,7 @@ eX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><G:/CTEX/MiKTeX/fonts/type1/public
 10.pfb><G:/CTEX/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><G:/CTEX/MiKTeX/fonts/t
 ype1/urw/times/utmbi8a.pfb><G:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><G:
 /CTEX/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gaoN.pdf (6 pages, 383743 bytes).
+Output written on gaoN.pdf (6 pages, 382565 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
